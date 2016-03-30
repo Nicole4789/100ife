@@ -1,0 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+div,img{
+	
+	border: 1px solid #999;
+	
+}
+img{
+	width: 80px;
+	height: 80px;
+}
+
+.wrap{
+	margin: 20px;
+	overflow:auto;
+	background-color: #eee;
+	padding: 20px;
+}
+#left{
+	width: 180px;
+	background-color: white;
+	float: left;
+	left: 20px;
+	padding: 20px;
+}
+#teamLogo{
+	float: left;
+	margin-right: 20px;
+}
+.memberLogo{
+	display: block;
+	margin: 20px 20px 10px;
+}
+#right{
+  float: right;
+   right: 20px;
+   top: 20px;
+	width: 120px;
+	background-color: white;
+
+
+}
+#main{
+	padding: 20px;
+	margin-left:240px;
+	margin-right:140px;
+	background-color: white;
+
+
+}
+
+p{
+	line-height:25px;
+}
