@@ -41,6 +41,7 @@ footer{
 	
 	background-color: gray;
 	overflow: hidden;
+	position: static;
 
 }
 /*.main:after, .main:before {
