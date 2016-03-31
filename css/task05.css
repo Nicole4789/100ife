@@ -40,22 +40,27 @@ footer{
 .main{
 	
 	background-color: gray;
-	overflow: auto;
-
+	overflow: hidden;
 
 }
+/*.main:after, .main:before {
+    content: "";
+    display: table;
+}*/
 
 #left1,#left2,#left3,#left4,.right{
 	border-bottom: 2px solid gray;
 	border-right: 2px solid gray;
 	background-color: white;
-	margin: 20px;
+	margin: 20px 20px 0 20px;
 }
 
 
 .left{
-	float: left;
+	max-width: 1000px;
 	margin-right: 20px;
+	float: left;
+
 
 }
 #left1,#left2,#left3,#left4{
@@ -73,13 +78,16 @@ footer{
 }
 #left3{
 	overflow: hidden;
-
-
 }
 .right{
+	position: static;
+
 	width: 200px;
 	height: 30px;
-	float: right;
 	padding: 20px;
+}
+ 
+.right{
+	float: left;
 }
 
