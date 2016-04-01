@@ -8,7 +8,9 @@
 
   <h3>污染城市列表</h3>
   <ul id="aqi-list">
-  
+  <!--
+    <li>第一名：福州（样例），10</li>
+    <li>第二名：福州（样例），10</li> -->
 
   </ul>
 
@@ -31,29 +33,27 @@ var aqiData = [
   将空气质量指数大于60的城市显示到aqi-list的列表中
   */
  
- 
-
   var len=aqiData.length;
   var ulist=document.getElementById('aqi-list');
-  var city=[];
+
+  //将数组按空气质量分数从大到小排序。
+  aqiData.sort(function(a,b){
+      return b[1]-a[1];
+    });
+
   for (var i = 0; i < len; i++) {
     if(aqiData[i][1]>60){
-      city.push(aqiData[i]);//将符合条件的数组元素添加到city中
+      ulist.innerHTML=document.write("<li>第" + (i+1)+ "名: " + aqiData[i][0]+"，"+aqiData[i][1]+"</li>");   
     }
 
   }
-  //将数组按空气质量分数从大到小排序。
-  city.sort(function(a,b){
-      return b[1]-a[1];
-    });
-  for (var j = 0; j < city.length; j++) {
-     ulist.innerHTML=document.write("<li>第"+j+1+"名:"+city[j][0]+"，" +             aqiData[j][1]+"</li>");     
-  }
-
- 
-
-    
-
+  // 另一种方法
+  // for (var i = 0; i < aqiData.length; ++i) {
+  //   var liNode = document.createElement("li");
+  //   if (aqiData[i][1] >= 60) {
+  //     liNode.innerHTML = '第' + (++c) + '名：' + aqiData[i][0] + ' ' + aqiData[i][1];
+  //     ulNode.appendChild(liNode);
+  //   }
 })();
 
 </script>
