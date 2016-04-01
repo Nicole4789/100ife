@@ -20,6 +20,7 @@
   在事件处理函数中
   获取aqi-input输入的值，并显示在aqi-display中
   */
+
 	var txt1=document.getElementById('aqi-input');
   
 	var bt=document.getElementById("button");
@@ -28,12 +29,11 @@
 	bt.onclick=function(){
 		//若用户在文本框输入了内容，将其显示在span里面
     if(txt1.value){//
-	     txt2.innerText=txt1.value;
+	     txt2.innerHTML=txt1.value;
      }else{
-        txt2.innerText="请输入内容";
+        txt2.innerHTML="请输入内容";
      }
-
-	};
+};
 
 
 })();
