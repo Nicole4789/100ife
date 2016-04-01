@@ -20,18 +20,18 @@
   在事件处理函数中
   获取aqi-input输入的值，并显示在aqi-display中
   */
-	var txt=document.getElementById('aqi-input');
-  var txtval=txt.value;
+	var txt1=document.getElementById('aqi-input');
+  
 	var bt=document.getElementById("button");
 	var txt2=document.getElementById('aqi-display');
 
 	bt.onclick=function(){
 		//若用户在文本框输入了内容，将其显示在span里面
-		if(txtval){
-			txt2.innerText=txtval;
-		}else{
-			txt2.innerText="请在文本框输入内容";
-		}
+    if(txt1.value){//
+	     txt2.innerText=txt1.value;
+     }else{
+        txt2.innerText="请输入内容";
+     }
 
 	};
 
