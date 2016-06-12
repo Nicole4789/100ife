@@ -1,0 +1,58 @@
+body{
+	padding-top: 50px;
+}
+nav{
+	margin-bottom: 0;
+}
+.carousel{
+	height: 500px;
+	background-color: #000;
+	margin-bottom: 60px;
+}
+.carousel .item{
+	height: 500px;
+	background-color: #000;
+}
+.carousel img{
+	width: 100%;
+}
+.carousel-caption p{
+	margin-bottom: 20px;
+	font-size: 20px;
+	line-height: 1.8;
+}
+.col-md-4{
+	text-align: center;
+}
+hr.divider{
+	margin: 40px 0;
+}
+.feature{
+	padding: 20px 0;
+}
+.feature-heading{
+	font-size: 50px;
+	color: #2a6496;
+	padding-top: 120px;
+}
+.feature-heading .text-muted{
+	font-size: 28px;
+	color: #999;
+	margin-left: 10px;
+}
+.footer{
+	height: 50px;
+	background-color: #000;
+	padding-top: 20px;
+}
+.footer p{
+	color: #fff;
+	text-align: center;
+
+}
+
+.return-top{
+	position: fixed;
+	right: 10px;
+	bottom: 300px;
+}
